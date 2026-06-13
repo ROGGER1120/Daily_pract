@@ -1,0 +1,88 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background-color:rgb(133, 40, 103);
+    font-family:Arial,sans-serif,Sans;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    padding:0 20px;
+}
+
+.to-do-list{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    max-width:400px;
+    flex-direction:column;
+    padding:2rem;
+    gap:30px;
+    color:white;
+    border-radius:20px;
+    box-shadow:0 0 100px rgba(0,0,0,0.5);
+    border:3px solid rgba(255,255,255,0.18);
+    backdrop-filter:blur(30px);
+
+}
+
+
+.ip-area{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+}
+
+.ip-area input{
+    padding:  10px 17px;
+    flex: 1;
+    font-size:1rem;
+    border:none;
+    outline:none;
+    border-radius:25px;
+    background: rgb(214, 187, 187);
+    color:#dbdbdb;
+
+}
+
+.ip-area input::placeholder{
+    color:black;
+
+}
+
+.ip-area button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+    padding:10px;
+    color:white;
+    font-size:1rem;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 154, 191, 0.3);
+    border-radius:50%;
+    cursor:pointer;
+    transition: all 0.2s ease;
+}
+
+
+.ip-area button:hover{
+    transform: scale(1.1);
+    backgroun: rgba(248, 98, 211, 0.81);
+
+}
