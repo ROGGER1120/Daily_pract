@@ -22,6 +22,7 @@ function escapeHtml(text) {
         .replaceAll("'", '&#39;');
 }
 
+
 function getFilteredTasks() {
     if (currentFilter === 'active') {
         return tasks.filter(task => !task.completed);
